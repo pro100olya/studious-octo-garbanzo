@@ -15,11 +15,11 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: dev-artemis.createitcreative.com
+    - host: qa-artemis.createitcreative.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls:
     - secretName: qa-artemis-tls
       hosts:
-        - dev-artemis.createitcreative.com
+        - qa-artemis.createitcreative.com
